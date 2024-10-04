@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span class="heart">♥</span> ALLETA MONYET 🤣 <span class="heart">♥</span></h1>
+        <p class="message">Aku sayang kamu lebih dari yang bisa diungkapkan dengan kata-kata!</p>
+        <button class="love-button">Klik untuk lihat sesuatu spesial</button>
+        <div class="surprise hidden">
+            <h2>❤ I LOVE YOU ❤</h2>
+            <p>Selamanya, dan selalu...</p>
+            <P>makasih untuk semuanya</P>
+        </div>
+    </div>
+    
+    <script>
+        const button = document.querySelector('.love-button');
+        const surprise = document.querySelector('.surprise');
+        button.addEventListener('click', () => {
+            surprise.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
